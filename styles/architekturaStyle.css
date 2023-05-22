@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+header{
+    width: 100%;
+    box-shadow: 0 0.5px 20px rgba(0, 0, 0, 0.7);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+
+}
+
+header a{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    margin: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+  
+header a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+header a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.map{
+    height: 774px;
+    position: relative;
+}
+
+.city{
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    cursor: pointer;
+
+
+}
+.txt{
+    opacity: 0;
+}
+.city:hover div{
+    opacity: 1;
+    transition: opacity 1s;
+}
+.city.krakow{
+    top: 472px;
+    left: 197px;
+}
+
+.city.lublin{
+    top: 384px;
+    left: 339px;
+}
+
+
+.city.lodz{
+    top: 336px;
+    left: 196px;
+}
+
+.city.warszawa{
+    top: 297px;
+    left: 267px;
+}
+
+.city.poznan{
+    top: 269px;
+    left: 78px;
+}
+
+.city.torun{
+    top: 224px;
+    left: 147px;
+}
+h1{
+    padding-top: 30px;
+    text-align: center;
+    animation: opacityAni 1.5s ease-out;
+}
+
+@keyframes opacityAni {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
