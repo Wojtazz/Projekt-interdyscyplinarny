@@ -13,7 +13,7 @@ header{
     font-size: 25px;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 7;
     background-color: white;
 
 }
@@ -65,13 +65,53 @@ header a:hover::after {
     height: 34px;
     position: absolute;
     cursor: pointer;
-
+    overflow: hidden;
 
 }
 .txt{
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgba(255, 245, 207, .8);
+    width: 360px;
     opacity: 0;
+    z-index: 5;
+    
+    
+}
+
+.city.krakow .txt{
+    position: absolute;
+    top: -300px;
+}
+.city.lodz .txt{
+    position: absolute;
+    top: -200px;
+}
+.city.lublin .txt{
+    position: absolute;
+    top: -360px;
+}
+
+.city.warszawa .txt{
+    position: absolute;
+    top: -330px;
+    width: 400px;
+    left: -100px;
+}
+.city.poznan .txt{
+    position: absolute;
+    top: -260px;
+}
+.city.torun .txt{
+    position: absolute;
+    top: -200px;
+}
+
+.city:hover{
+    overflow: visible;
 }
 .city:hover div{
+    
     opacity: 1;
     transition: opacity 1s;
 }
