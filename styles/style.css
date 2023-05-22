@@ -17,6 +17,10 @@ header{
     background-color: white;
 
 }
+.ang, .pl{
+    height: 30px;
+    display: block;
+}
 
 header a{
     display: inline-block;
@@ -32,7 +36,7 @@ a{
 
 
   
-header a::after {
+header .btn::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -45,7 +49,7 @@ header a::after {
     transition: transform 0.25s ease-out;
 }
   
-header a:hover::after {
+header .btn:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -74,7 +78,7 @@ p{
     font-size: 60px;
     font-weight: bold;
 }
-img{
+.content img{
     width: 960px;
     position: absolute;
 }
