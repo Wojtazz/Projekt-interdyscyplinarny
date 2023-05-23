@@ -139,7 +139,7 @@ p{
         display: none;
     }
     header::before{
-        content: 'Straty materialne polski podczas II wojny światowej';
+        content: 'Polish material losses during World War II';
     }
     header{
         height: 125px;
